@@ -264,17 +264,19 @@ export const MAP_LOCATIONS = [
 ];
 
 export const RESEARCH = {
-  title: "Construction Challenges of Seismic-Resilient Timber Structural Systems",
+  title:
+    "Construction Challenges of Seismic-Resilient Timber Structural Systems: A Comparative Study of Press-Lam and RSFJ Technologies",
   level: "Master's Research — Auckland University of Technology",
   image:
-    "https://images.unsplash.com/photo-1568056916012-b06d738446de?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+    "https://customer-assets.emergentagent.com/job_srikan-projects/artifacts/gxnt1kqw_912c895d-f4e6-4dc2-8f37-024dabf539c3.png",
   abstract:
-    "This research investigates the practical construction challenges associated with seismic-resilient timber structural systems, examining buildability, connection detailing, supply-chain readiness and on-site quality control. The work aims to bridge the gap between structural design intent and real-world construction delivery in seismically active regions such as New Zealand.",
+    "The aim of this research is to critically evaluate and compare the construction management performance of timber structural systems utilising Resilient Slip Friction Joint (RSFJ) and Press-Lam technology in New Zealand, with a focus on on-site erection efficiency, procurement and logistics, and construction scheduling, in order to identify the most effective system under varying project conditions.",
   themes: [
-    "Seismic resilience in mass timber construction",
-    "Buildability and connection detailing",
-    "Sustainable, low-carbon structural systems",
-    "Quality control and on-site delivery challenges",
+    "Press-Lam vs RSFJ technologies",
+    "On-site erection efficiency",
+    "Procurement & logistics",
+    "Construction scheduling",
+    "Seismic resilience in mass timber",
   ],
   publications: [
     {
