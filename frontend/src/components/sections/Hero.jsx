@@ -80,11 +80,11 @@ export const Hero = () => {
             View Projects
             <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <a href="/cv-srikan-dewasumithra.pdf" download>
-            <Button size="lg" variant="outline" className="rounded-md gap-2 hover:-translate-y-0.5 transition-transform" data-testid="hero-download-cv">
+          <Button asChild size="lg" variant="outline" className="rounded-md gap-2 hover:-translate-y-0.5 transition-transform" data-testid="hero-download-cv">
+            <a href="/cv-srikan-dewasumithra.pdf" download="Srikan-Dewasumithra-CV.pdf">
               <Download className="h-4 w-4" /> Download CV
-            </Button>
-          </a>
+            </a>
+          </Button>
           <Button
             size="lg"
             variant="ghost"

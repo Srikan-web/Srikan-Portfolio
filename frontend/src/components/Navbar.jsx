@@ -86,11 +86,11 @@ export const Navbar = () => {
           >
             {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
-          <a href="/cv-srikan-dewasumithra.pdf" download className="hidden sm:block">
-            <Button size="sm" className="rounded-md gap-2" data-testid="nav-download-cv">
+          <Button asChild size="sm" className="rounded-md gap-2 hidden sm:inline-flex" data-testid="nav-download-cv">
+            <a href="/cv-srikan-dewasumithra.pdf" download="Srikan-Dewasumithra-CV.pdf">
               <Download className="h-4 w-4" /> CV
-            </Button>
-          </a>
+            </a>
+          </Button>
           <button
             onClick={() => setOpen((o) => !o)}
             className="lg:hidden h-9 w-9 grid place-items-center rounded-md border border-border"
