@@ -73,7 +73,7 @@ export const Contact = () => {
               <div key={i}>{content}</div>
             );
           })}
-          <a href="/cv-srikan-dewasumithra.pdf" download className="block">
+          <a href="/cv-srikan-dewasumithra.pdf" download="Srikan-Dewasumithra-CV.pdf" className="block">
             <div className="bg-primary text-primary-foreground p-5 flex items-center gap-4 hover:opacity-90 transition-opacity">
               <span className="h-11 w-11 grid place-items-center rounded-md bg-white/15 shrink-0">
                 <Download className="h-5 w-5" />
