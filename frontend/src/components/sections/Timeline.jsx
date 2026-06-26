@@ -12,12 +12,12 @@ const CompanyLogo = ({ company, align }) => {
       className={`mb-3 flex ${align === "right" ? "lg:justify-end" : "lg:justify-start"} justify-start`}
       title={c.name}
     >
-      <div className="h-12 w-12 rounded-md border border-border bg-white grid place-items-center overflow-hidden shrink-0 shadow-sm">
+      <div className={`h-12 w-12 rounded-md border border-border ${c.bg} grid place-items-center overflow-hidden shrink-0 shadow-sm`}>
         {!error ? (
           <img
             src={c.logo}
             alt={`${c.name} logo`}
-            className="h-9 w-9 object-contain"
+            className={c.fit}
             onError={() => setError(true)}
             loading="lazy"
           />

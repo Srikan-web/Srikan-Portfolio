@@ -43,13 +43,17 @@ export const ABOUT = {
 export const COMPANIES = {
   aut: {
     name: "Auckland University of Technology",
-    logo: "https://logo.clearbit.com/aut.ac.nz",
+    logo: "https://customer-assets.emergentagent.com/job_srikan-projects/artifacts/s3vkxwd8_AUT_Logo_New.jpg",
     short: "AUT",
+    bg: "bg-black",
+    fit: "object-cover h-full w-full",
   },
   sanken: {
     name: "Sanken Overseas (Pvt) Ltd",
-    logo: "https://logo.clearbit.com/sankenoverseas.com",
+    logo: "https://customer-assets.emergentagent.com/job_srikan-projects/artifacts/hyxwcg1c_SO%20Logo.jpg",
     short: "SO",
+    bg: "bg-white",
+    fit: "object-contain h-10 w-10",
   },
 };
 
