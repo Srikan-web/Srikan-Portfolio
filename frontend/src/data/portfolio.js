@@ -3,7 +3,7 @@
 export const PROFILE = {
   name: "Srikan Dewasumithra",
   shortName: "Srikan Dewasumithra",
-  role: "Civil Engineer | Master of Construction Management (AUT)",
+  role: "Civil Engineer | Master of Construction Management Candidate | Site Engineering & Project Delivery",
   tagline:
     "Delivering complex infrastructure and construction projects across Asia, Africa and New Zealand.",
   location: "Auckland, New Zealand",
