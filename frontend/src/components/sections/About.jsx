@@ -51,6 +51,16 @@ export const About = () => {
               </div>
             ))}
           </div>
+
+          <div className="mt-8 flex flex-wrap gap-2">
+            {ABOUT.credentials.map((c, i) => (
+              <Reveal key={i} delay={0.1 + i * 0.05}>
+                <span className="text-xs font-medium px-3 py-1.5 rounded-full border border-border bg-surface">
+                  {c}
+                </span>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </div>
     </section>

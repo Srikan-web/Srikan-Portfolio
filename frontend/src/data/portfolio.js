@@ -7,63 +7,69 @@ export const PROFILE = {
   tagline:
     "Delivering complex infrastructure and construction projects across Asia, Africa and New Zealand.",
   location: "Auckland, New Zealand",
-  email: "srikan.dewasumithra@example.com",
-  phone: "+64 21 000 0000",
-  linkedin: "https://www.linkedin.com/in/your-profile",
+  email: "msdushmantha.d@gmail.com",
+  phone: "+64 290 258 9090",
+  linkedin: "https://www.linkedin.com/in/srikan-dushmantha",
   github: "#",
   heroImage:
     "https://images.unsplash.com/photo-1529926691761-20fb82067c71?crop=entropy&cs=srgb&fm=jpg&q=85&w=1600",
   aboutImage:
-    "https://images.unsplash.com/photo-1504307651254-35680f356dfd?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+    "https://customer-assets.emergentagent.com/job_srikan-projects/artifacts/e0t90lmb_1771730528899.jpg",
 };
 
 export const ABOUT = {
   intro:
-    "Civil engineer with over a decade of international experience delivering large-scale infrastructure and construction projects. Currently pursuing a Master of Construction Management at Auckland University of Technology (AUT).",
+    "Chartered Civil Engineer with over 10 years of international construction experience delivering infrastructure and resort development projects across Asia and Africa. Currently pursuing a Master of Construction Management at Auckland University of Technology (AUT), and a student member of Engineering New Zealand (ENZ) and the New Zealand Society for Earthquake Engineering (NZSEE).",
   points: [
-    "Over 10 years of international construction experience across diverse environments.",
-    "Currently studying a Master of Construction Management at Auckland University of Technology.",
-    "Hands-on delivery experience in the Maldives, Kenya, Uganda and Myanmar.",
-    "Passionate about infrastructure, reliable project delivery and sustainable construction.",
+    "Over 10 years of international construction experience across Asia and Africa.",
+    "Chartered Engineer (IESL) and Chartered Professional Manager (MCPM).",
+    "Currently studying a Master of Construction Management at AUT (expected Dec 2026).",
+    "Hands-on delivery in the Maldives, Kenya, Uganda and Myanmar — from luxury resorts to ports and hydropower.",
+  ],
+  credentials: [
+    "Chartered Engineer — IESL (M-9368)",
+    "Chartered Professional Manager — MCPM (MCPM01368)",
+    "BSc (Hons) Civil Engineering — University of Moratuwa",
+    "Student Member — Engineering NZ & NZSEE",
   ],
   stats: [
     { label: "Years Experience", value: "10+" },
     { label: "Countries Delivered", value: "4" },
     { label: "Major Projects", value: "5" },
-    { label: "Disciplines", value: "12" },
+    { label: "Chartered Memberships", value: "2" },
   ],
 };
 
 export const TIMELINE = [
   {
-    year: "2024 — Present",
+    year: "2024 — 2026",
     title: "Master of Construction Management",
     org: "Auckland University of Technology, New Zealand",
-    desc: "Advancing expertise in construction management, sustainability and seismic-resilient structural systems.",
+    desc: "Advancing expertise in construction management and sustainability, with research into seismic-resilient timber structural systems. Expected Dec 2026.",
   },
   {
-    year: "2021 — 2023",
-    title: "Senior Site / Project Engineer",
-    org: "Thilawa Port Expansion — Myanmar",
-    desc: "Led marine and landside works for a major port expansion programme.",
+    year: "2022 — 2026",
+    title: "Site Manager — One&Only Reethi Rah Resort (Phase I & II)",
+    org: "Sanken Overseas — Maldives",
+    desc: "Delivered a 4,000 m² iconic overwater restaurant and led luxury villa refurbishment within a live resort environment.",
   },
   {
-    year: "2018 — 2021",
-    title: "Project Engineer — Hydropower",
-    org: "Kyambura & Muvumbe Hydropower — Uganda",
-    desc: "Delivered civil and structural works for run-of-river hydropower schemes.",
+    year: "2020 — 2022",
+    title: "Site Manager — Mombasa Port Development (Phase II)",
+    org: "Sanken Overseas — Kenya",
+    desc: "Managed building and infrastructure works including container yards, roads and drainage under an international contracting framework.",
   },
   {
-    year: "2016 — 2018",
-    title: "Site Engineer",
-    org: "Mombasa Port Development — Kenya",
-    desc: "Managed quay and container terminal construction works.",
+    year: "2018 — 2020",
+    title: "Site / Structural Design Engineer",
+    org: "Kyambura Hydropower (Uganda) & Sanken Construction",
+    desc: "Supervised civil works for a 7.6 MW hydropower scheme and performed structural analysis & 3D modelling for RC structures.",
   },
   {
-    year: "2013 — 2016",
-    title: "Construction Engineer",
-    org: "One&Only Reethi Rah Resort — Maldives",
-    desc: "Coordinated luxury resort civil works across challenging island logistics.",
+    year: "2015 — 2018",
+    title: "Site Engineer — Hydropower & Ports",
+    org: "Muvumbe (Uganda) & Thilawa Port (Myanmar)",
+    desc: "Supervised civil works for a 6.5 MW hydropower scheme and container yard, jetty and drainage works on a major port expansion.",
   },
 ];
 
@@ -72,26 +78,26 @@ export const PROJECTS = [
     id: "reethi-rah-maldives",
     title: "One&Only Reethi Rah Resort",
     location: "Maldives",
-    year: "2013 — 2016",
-    category: "Luxury Resort / Civil Works",
+    year: "2022 — 2026",
+    category: "Luxury Resort / Site Management",
     image:
       "https://images.unsplash.com/photo-1645645082782-afc5a007f3e1?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400",
     overview:
-      "Civil and structural construction works for an ultra-luxury island resort, executed under demanding marine logistics and tight environmental constraints.",
+      "As Site Manager across two phases, delivered a 4,000 m² iconic overwater restaurant (Phase I) and led luxury villa refurbishment (Phase II) within a live, operating ultra-luxury resort environment.",
     responsibilities: [
-      "Coordinated island-wide civil works and material logistics by sea.",
-      "Supervised reinforced concrete villa foundations and marine structures.",
-      "Interfaced with international architects and resort operators.",
+      "Led site management across Phase I and Phase II works.",
+      "Coordinated multiple subcontractors to meet programme and quality objectives.",
+      "Managed works within a live resort while protecting guest experience.",
     ],
     challenges: [
-      "Severe logistical constraints transporting materials to a remote atoll.",
-      "Strict environmental protection of surrounding reef ecosystems.",
-      "Maintaining luxury finish tolerances in a marine environment.",
+      "Constructing within an operational, ultra-luxury live resort.",
+      "Severe marine logistics for materials to a remote atoll.",
+      "Maintaining premium finish tolerances in a marine environment.",
     ],
     achievements: [
-      "Delivered key civil packages on schedule despite logistics risk.",
-      "Zero major environmental incidents during construction.",
-      "Achieved premium finish quality across villa structures.",
+      "Delivered a 4,000 m² iconic overwater restaurant.",
+      "Completed luxury villa refurbishment to programme and quality targets.",
+      "Maintained quality standards throughout live-resort operations.",
     ],
     gallery: [
       "https://images.unsplash.com/photo-1626227438743-89bc4d2a0bff?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
@@ -103,16 +109,16 @@ export const PROJECTS = [
     id: "mombasa-port-kenya",
     title: "Mombasa Port Development Project",
     location: "Kenya",
-    year: "2016 — 2018",
+    year: "2020 — 2022",
     category: "Marine Infrastructure / Port",
     image:
       "https://images.unsplash.com/photo-1598193957011-39b9f2916992?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400",
     overview:
-      "Construction of quay structures and container terminal facilities supporting one of East Africa's most significant trade gateways.",
+      "As Site Manager on Phase II, delivered building and infrastructure works — including container yards, roads and drainage systems — under an international contracting framework at one of East Africa's key trade gateways.",
     responsibilities: [
-      "Managed quay wall and container yard construction works.",
-      "Coordinated piling, dredging interfaces and heavy civil works.",
-      "Implemented QA/QC procedures for marine concrete.",
+      "Managed container yard, roads and drainage construction.",
+      "Coordinated building and infrastructure works on Phase II.",
+      "Implemented QA/QC and HSE procedures across the site.",
     ],
     challenges: [
       "Complex marine geotechnical conditions.",
@@ -134,15 +140,15 @@ export const PROJECTS = [
     id: "kyambura-hydropower-uganda",
     title: "Kyambura Hydropower Project",
     location: "Uganda",
-    year: "2018 — 2020",
-    category: "Hydropower / Renewable Energy",
+    year: "2018 — 2019",
+    category: "Hydropower (7.6 MW) / Renewable Energy",
     image:
       "https://images.unsplash.com/photo-1560279966-2d681f3d4dfc?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400",
     overview:
-      "Civil and structural delivery for a run-of-river hydropower scheme contributing clean energy to the national grid.",
+      "Site Engineer supervising civil works for a 7.6 MW small hydropower scheme, including channels, forebay tank, spillway and powerhouse structures.",
     responsibilities: [
-      "Supervised weir, intake and powerhouse civil works.",
-      "Managed penstock alignment and concrete structures.",
+      "Supervised channel, forebay tank, spillway and powerhouse works.",
+      "Managed reinforced-concrete construction and quality control.",
       "Coordinated with electromechanical installation teams.",
     ],
     challenges: [
@@ -165,14 +171,14 @@ export const PROJECTS = [
     id: "muvumbe-hydropower-uganda",
     title: "Muvumbe Hydropower Project",
     location: "Uganda",
-    year: "2019 — 2021",
-    category: "Hydropower / Renewable Energy",
+    year: "2015 — 2017",
+    category: "Hydropower (6.5 MW) / Renewable Energy",
     image:
       "https://images.pexels.com/photos/29000309/pexels-photo-29000309.jpeg?auto=compress&cs=tinysrgb&w=1400",
     overview:
-      "A small-scale hydropower development delivering sustainable power, requiring precise civil works in mountainous terrain.",
+      "Site Engineer supervising civil works for a 6.5 MW small hydropower scheme, including channels, forebay tank, spillway and powerhouse structures, in challenging terrain.",
     responsibilities: [
-      "Led civil works for intake, canal and powerhouse structures.",
+      "Supervised channel, forebay tank, spillway and powerhouse works.",
       "Managed earthworks and slope stabilisation.",
       "Oversaw quality control of mass and structural concrete.",
     ],
@@ -196,16 +202,16 @@ export const PROJECTS = [
     id: "thilawa-port-myanmar",
     title: "Thilawa Port Expansion Project",
     location: "Myanmar",
-    year: "2021 — 2023",
+    year: "2017 — 2018",
     category: "Marine Infrastructure / Port",
     image:
       "https://images.pexels.com/photos/36652843/pexels-photo-36652843.jpeg?auto=compress&cs=tinysrgb&w=1400",
     overview:
-      "Expansion of port and terminal facilities to increase national trade capacity, involving major marine and landside civil works.",
+      "Site Engineer supervising container yard, jetty and drainage construction works for a major port expansion increasing national trade capacity.",
     responsibilities: [
-      "Led marine and landside civil engineering works.",
-      "Managed contract administration and progress reporting.",
-      "Drove site safety and quality assurance programmes.",
+      "Supervised container yard, jetty and drainage works.",
+      "Coordinated marine and landside civil engineering activities.",
+      "Drove site safety and quality assurance on site.",
     ],
     challenges: [
       "Coordinating marine works with vessel operations.",
