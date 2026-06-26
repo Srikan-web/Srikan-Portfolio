@@ -1,7 +1,7 @@
 // Static portfolio content for Manameldura Srikan D. Dewasumithra
 
 export const PROFILE = {
-  name: "Manameldura Srikan D. Dewasumithra",
+  name: "Srikan Dewasumithra",
   shortName: "Srikan Dewasumithra",
   role: "Civil Engineer | Master of Construction Management (AUT)",
   tagline:

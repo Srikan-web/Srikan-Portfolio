@@ -43,7 +43,7 @@ export const Hero = () => {
           className="font-heading text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-[0.95] max-w-4xl text-balance"
           data-testid="hero-name"
         >
-          Manameldura Srikan D.{" "}
+          Srikan{" "}
           <span className="text-accent">Dewasumithra</span>
         </motion.h1>
 
