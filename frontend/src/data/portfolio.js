@@ -5,7 +5,7 @@ export const PROFILE = {
   shortName: "Srikan Dewasumithra",
   role: "Civil Engineer | Master of Construction Management Candidate | Site Engineering & Project Delivery",
   tagline:
-    "Delivering complex infrastructure and construction projects across Asia, Africa and New Zealand.",
+    "Over 10 years of international experience delivering civil infrastructure, luxury resort, port, and hydropower projects. Currently completing a Master of Construction Management at AUT and building my engineering career in New Zealand.",
   location: "Auckland, New Zealand",
   email: "msdushmantha.d@gmail.com",
   phone: "+64 290 258 9090",
@@ -40,33 +40,51 @@ export const ABOUT = {
   ],
 };
 
+export const COMPANIES = {
+  aut: {
+    name: "Auckland University of Technology",
+    logo: "https://logo.clearbit.com/aut.ac.nz",
+    short: "AUT",
+  },
+  sanken: {
+    name: "Sanken Overseas (Pvt) Ltd",
+    logo: "https://logo.clearbit.com/sankenoverseas.com",
+    short: "SO",
+  },
+};
+
 export const TIMELINE = [
   {
     year: "2024 — 2026",
+    company: "aut",
     title: "Master of Construction Management",
     org: "Auckland University of Technology, New Zealand",
     desc: "Advancing expertise in construction management and sustainability, with research into seismic-resilient timber structural systems. Expected Dec 2026.",
   },
   {
     year: "2022 — 2026",
+    company: "sanken",
     title: "Site Manager — One&Only Reethi Rah Resort (Phase I & II)",
     org: "Sanken Overseas — Maldives",
     desc: "Delivered a 4,000 m² iconic overwater restaurant and led luxury villa refurbishment within a live resort environment.",
   },
   {
     year: "2020 — 2022",
+    company: "sanken",
     title: "Site Manager — Mombasa Port Development (Phase II)",
     org: "Sanken Overseas — Kenya",
     desc: "Managed building and infrastructure works including container yards, roads and drainage under an international contracting framework.",
   },
   {
     year: "2018 — 2020",
+    company: "sanken",
     title: "Site / Structural Design Engineer",
     org: "Kyambura Hydropower (Uganda) & Sanken Construction",
     desc: "Supervised civil works for a 7.6 MW hydropower scheme and performed structural analysis & 3D modelling for RC structures.",
   },
   {
     year: "2015 — 2018",
+    company: "sanken",
     title: "Site Engineer — Hydropower & Ports",
     org: "Muvumbe (Uganda) & Thilawa Port (Myanmar)",
     desc: "Supervised civil works for a 6.5 MW hydropower scheme and container yard, jetty and drainage works on a major port expansion.",
