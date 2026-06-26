@@ -1,0 +1,41 @@
+{
+  "summary": "Verified the CV-download fix (target=_blank, no `download` attribute) across all three CV anchors. All attribute checks pass; each click opens a new tab whose first request hits /cv-srikan-dewasumithra.pdf and the SPA does not navigate away. PDF asset is reachable (HTTP 200, application/pdf, 138813 bytes).",
+  "backend_issues": { "critical": [], "minor": [] },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "verifications": {
+    "pdf_asset": {
+      "url": "{REACT_APP_BACKEND_URL}/cv-srikan-dewasumithra.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "size_bytes": 138813
+    },
+    "anchor_attributes": {
+      "hero-download-cv":    { "tag": "A", "href": "/cv-srikan-dewasumithra.pdf", "target": "_blank", "download": null, "rel": "noopener noreferrer" },
+      "nav-download-cv":     { "tag": "A", "href": "/cv-srikan-dewasumithra.pdf", "target": "_blank", "download": null, "rel": "noopener noreferrer" },
+      "contact-download-cv": { "tag": "A", "href": "/cv-srikan-dewasumithra.pdf", "target": "_blank", "download": null, "rel": "noopener noreferrer" }
+    },
+    "popup_behavior": {
+      "hero-download-cv":    { "new_tab_opened": true, "pdf_request_seen": true, "spa_stayed_on_home": true },
+      "nav-download-cv":     { "new_tab_opened": true, "pdf_request_seen": true, "spa_stayed_on_home": true },
+      "contact-download-cv": { "new_tab_opened": true, "pdf_request_seen": true, "spa_stayed_on_home": true }
+    },
+    "notes": "Chromium under Playwright does not have a built-in PDF viewer, so popup.url often appears empty/':' after the PDF is downloaded. We assert the popup's network request to the PDF URL via context.on('request'), which is the reliable signal that the new tab navigated to the PDF. In a real browser preview iframe, the new top-level tab will display the PDF using the browser's PDF viewer."
+  },
+  "test_report_links": ["/app/test_reports/iteration_3.json"],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "All three anchors consistently use `target=_blank` with `rel=noopener noreferrer` — good security practice (prevents tabnabbing).",
+    "Code is clean: no `download` attribute anywhere, so the iframe-sandbox 'allow-downloads' restriction no longer applies."
+  ],
+  "updated_files": [],
+  "success_rate": { "backend": "n/a (frontend-only)", "frontend": "100%" },
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "CV download fix verified end-to-end. If future regression suite needs to assert PDF popup in Chromium, listen for the popup's request to /cv-srikan-dewasumithra.pdf via context.on('request') rather than reading popup.url (which can stay ':' because Chromium downloads PDFs by default in headless mode).",
+  "rca of the issue": "Previously the download attribute was being blocked by Emergent preview's sandboxed iframe. Replacing download with target=_blank routes the navigation to a new top-level browsing context, bypassing the sandbox's allow-downloads restriction. Verified by observing the popup window's network request to the PDF URL on each of the three CV anchors."
+}

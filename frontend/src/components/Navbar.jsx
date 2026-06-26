@@ -87,7 +87,7 @@ export const Navbar = () => {
             {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
           <Button asChild size="sm" className="rounded-md gap-2 hidden sm:inline-flex" data-testid="nav-download-cv">
-            <a href="/cv-srikan-dewasumithra.pdf" download="Srikan-Dewasumithra-CV.pdf">
+            <a href="/cv-srikan-dewasumithra.pdf" target="_blank" rel="noopener noreferrer">
               <Download className="h-4 w-4" /> CV
             </a>
           </Button>

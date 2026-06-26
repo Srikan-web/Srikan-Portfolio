@@ -81,7 +81,7 @@ export const Hero = () => {
             <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Button>
           <Button asChild size="lg" variant="outline" className="rounded-md gap-2 hover:-translate-y-0.5 transition-transform" data-testid="hero-download-cv">
-            <a href="/cv-srikan-dewasumithra.pdf" download="Srikan-Dewasumithra-CV.pdf">
+            <a href="/cv-srikan-dewasumithra.pdf" target="_blank" rel="noopener noreferrer">
               <Download className="h-4 w-4" /> Download CV
             </a>
           </Button>
