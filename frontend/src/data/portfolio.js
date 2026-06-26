@@ -256,11 +256,11 @@ export const PROJECTS = [
 // Marker positions use equirectangular projection of the world map.
 // left% = (lng + 180) / 360 * 100 ; top% = (90 - lat) / 180 * 100
 export const MAP_LOCATIONS = [
-  { name: "Maldives", project: "One&Only Reethi Rah Resort", lat: 3.2, lng: 73.2, top: "48.2%", left: "70.3%" },
-  { name: "Kenya", project: "Mombasa Port Development", lat: -4.0, lng: 39.6, top: "52.2%", left: "61.0%" },
-  { name: "Uganda", project: "Kyambura & Muvumbe Hydropower", lat: 0.3, lng: 32.6, top: "49.8%", left: "59.1%" },
-  { name: "Myanmar", project: "Thilawa Port Expansion", lat: 16.8, lng: 96.2, top: "45%", left: "76.7%" },
-  { name: "New Zealand", project: "Based in Auckland", lat: -36.8, lng: 174.8, top: "70.5%", left: "96.5%", home: true },
+  { name: "Maldives", project: "One&Only Reethi Rah Resort", lat: 3.2, lng: 73.2, top: "49%", left: "63%" },
+  { name: "Kenya", project: "Mombasa Port Development", lat: -4.0, lng: 39.6, top: "51.5%", left: "56%" },
+  { name: "Uganda", project: "Kyambura & Muvumbe Hydropower", lat: 0.3, lng: 32.6, top: "49.5%", left: "53.5%" },
+  { name: "Myanmar", project: "Thilawa Port Expansion", lat: 16.8, lng: 96.2, top: "43%", left: "73%" },
+  { name: "New Zealand", project: "Based in Auckland", lat: -36.8, lng: 174.8, top: "66%", left: "90%", home: true },
 ];
 
 export const RESEARCH = {

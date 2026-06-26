@@ -1,0 +1,58 @@
+{
+  "summary": "Frontend-only verification of the Kenya/Uganda WorldMap marker bug fix on the portfolio Home page. Loaded the live preview URL, disabled Lenis smooth-scroll, scrolled to the 'Projects across Asia, Africa & Oceania' section, screenshotted the full map plus a zoomed Africa crop, and measured each marker's center as a percentage of the rendered map image. Verified all 5 markers render, that hover/click reveals correct tooltip text, and that the legend lists all 5 locations.",
+  "backend_issues": { "critical": [], "minor": [] },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {
+        "screen": "WorldMap section",
+        "issues": [
+          "Maldives marker (left 63%, top 49%) renders close to the Arabian Peninsula / NW Indian Ocean rather than directly south of India. Acceptable given the dotted map's ~5% leftward continent shift, but slightly north of the true Maldives latitude. Consider top ~52-53% if a future tweak is desired. NOT a blocker for this bug fix."
+        ]
+      }
+    ]
+  },
+  "bug_fix_verification": {
+    "feature": "Kenya & Uganda map marker placement on Global Footprint world map",
+    "status": "VERIFIED FIXED",
+    "evidence": {
+      "measured_marker_positions_pct_of_map_image": {
+        "uganda":      { "left": 54.14, "top": 50.46 },
+        "kenya":       { "left": 56.64, "top": 52.46 },
+        "maldives":    { "left": 63.64, "top": 49.96 },
+        "myanmar":     { "left": 73.64, "top": 43.96 },
+        "new-zealand": { "left": 90.64, "top": 66.96 }
+      },
+      "visual_observation": "In the zoomed-in Africa screenshot the Uganda dot sits on the equatorial African landmass (Uganda/DRC band) and the Kenya dot sits just east of it on the East African landmass. Uganda is clearly west of Kenya. Neither marker is in the Indian Ocean and neither is over India anymore.",
+      "tooltips": {
+        "kenya":  "Kenya - Mombasa Port Development",
+        "uganda": "Uganda - Kyambura & Muvumbe Hydropower"
+      },
+      "legend_items_visible": ["Maldives", "Kenya", "Uganda", "Myanmar", "New Zealand"],
+      "all_five_markers_present": true,
+      "data_testids_verified": [
+        "map-marker-maldives",
+        "map-marker-kenya",
+        "map-marker-uganda",
+        "map-marker-myanmar",
+        "map-marker-new-zealand"
+      ]
+    }
+  },
+  "test_report_links": [
+    "/app/tests/frontend/test_worldmap_markers.py"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "WorldMap.jsx applies p-4 padding directly on the <img class='absolute inset-0 ... p-4'> while markers are positioned in % against the parent container (which spans the full container, not the padded image content box). With the current ~1264x848 aspect ratio container, p-4 (16px) on a ~1246px-wide image introduces a ~1.3% horizontal and ~1.9% vertical offset between marker coordinates and the actual drawn dotted-map raster. Markers are positioned against the container box, but the visible image is inset by p-4. Recommend either (a) removing p-4 from the <img> and applying it to the outer wrapper instead, OR (b) wrapping the image in a div that is itself the positioning context (so markers and image share the same inset box). Current calibration compensates empirically, but any future image swap will break it.",
+    "MAP_LOCATIONS comment at portfolio.js:256-257 still describes the original true equirectangular formula (left=(lng+180)/360*100). The actual stored values do NOT match this formula because the dotted map is shifted ~5% left. Update the comment or store the empirical offset to avoid future regressions."
+  ],
+  "updated_files": [],
+  "success_rate": { "backend": "n/a", "frontend": "100%" },
+  "seed_data_creation": "None",
+  "test_credentials": "None required (public marketing page).",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "The site uses Lenis smooth scroll - always destroy window.__lenis before calling scrollIntoView. The WorldMap section sits ~6700px below the hero on a 1440-wide viewport; use viewport height >=2400 to capture the full map in a single screenshot. Markers initially animate from opacity:0 due to whileInView; hover-based Playwright actions will time out reporting 'element not visible' even though they ARE clickable - use page.click(..., force=True) and read tooltip text from .bg-popover. The map image is cross-origin (static.prod-images.emergentagent.com) so canvas pixel sampling via getImageData throws SecurityError - rely on visual screenshots for landmass verification."
+}
