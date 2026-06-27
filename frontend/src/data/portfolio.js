@@ -3,16 +3,16 @@
 export const PROFILE = {
   name: "Srikan Dewasumithra",
   shortName: "Srikan Dewasumithra",
-  role: "Civil Engineer | Master of Construction Management Candidate | Site Engineering & Project Delivery",
+  role: "Civil Engineer | Construction Management | Project Delivery",
   tagline:
-    "Over 10 years of international experience delivering civil infrastructure, luxury resort, port, and hydropower projects. Currently completing a Master of Construction Management at AUT and building my engineering career in New Zealand.",
+    "Master of Construction Management candidate at AUT with 10+ years of international experience delivering civil infrastructure, luxury resorts, ports and hydropower projects across Asia and Africa. Passionate about sustainable construction, seismic-resilient timber structures and digital project delivery.",
   location: "Auckland, New Zealand",
   email: "msdushmantha.d@gmail.com",
   phone: "+64 290 258 9090",
   linkedin: "https://www.linkedin.com/in/srikan-dushmantha",
   github: "#",
   heroImage:
-    "https://images.unsplash.com/photo-1529926691761-20fb82067c71?crop=entropy&cs=srgb&fm=jpg&q=85&w=1600",
+    "/images/20220510_150115.jpg",
   aboutImage:
     "https://customer-assets.emergentagent.com/job_srikan-projects/artifacts/e0t90lmb_1771730528899.jpg",
 };
@@ -53,7 +53,7 @@ export const COMPANIES = {
     logo: "https://customer-assets.emergentagent.com/job_srikan-projects/artifacts/hyxwcg1c_SO%20Logo.jpg",
     short: "SO",
     bg: "bg-white",
-    fit: "object-contain h-10 w-10",
+    fit: "object-contain h-full w-full",
   },
 };
 
@@ -98,14 +98,15 @@ export const TIMELINE = [
 export const PROJECTS = [
   {
     id: "reethi-rah-maldives",
-    title: "One&Only Reethi Rah Resort",
+    title: "One&Only Reethi Rah Resort – Phase I & II",
+    subtitle: "Site Manager • Phase I (2022–2025) • Phase II (2025–2026)",
     location: "Maldives",
     year: "2022 — 2026",
-    category: "Luxury Resort / Site Management",
+    category: "Luxury Resort Development",
     image:
-      "https://images.unsplash.com/photo-1645645082782-afc5a007f3e1?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400",
+      "/images/projects/OORR-1.jpeg",
     overview:
-      "As Site Manager across two phases, delivered a 4,000 m² iconic overwater restaurant (Phase I) and led luxury villa refurbishment (Phase II) within a live, operating ultra-luxury resort environment.",
+      "Delivered landmark luxury resort developments including a 4,000 m² overwater restaurant, premium villas and supporting infrastructure within one of the world's most exclusive island resorts.",
     responsibilities: [
       "Led site management across Phase I and Phase II works.",
       "Coordinated multiple subcontractors to meet programme and quality objectives.",
@@ -122,21 +123,25 @@ export const PROJECTS = [
       "Maintained quality standards throughout live-resort operations.",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1626227438743-89bc4d2a0bff?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
-      "https://images.unsplash.com/photo-1626227438613-d9e208327367?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
-      "https://images.unsplash.com/photo-1512187849-463fdb898f21?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+      "/images/projects/OORR-1.jpeg",
+      "/images/projects/OORR-2.jpeg",
+      "/images/projects/OORR-3.jpeg",
+      "/images/projects/OORR-4.jpg",
+      "/images/projects/OORR-5.jpg",
+      "/images/projects/OORR-6.jpeg",
     ],
   },
   {
     id: "mombasa-port-kenya",
-    title: "Mombasa Port Development Project",
+    title: "Mombasa Port Development Project- Phase II",
+    subtitle: "Site Manager • (2020–2022)",
     location: "Kenya",
     year: "2020 — 2022",
-    category: "Marine Infrastructure / Port",
+    category: "PORT INFRASTRUCTURE",
     image:
-      "https://images.unsplash.com/photo-1598193957011-39b9f2916992?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400",
+      "/images/projects/MPDP-1.jpg",
     overview:
-      "As Site Manager on Phase II, delivered building and infrastructure works — including container yards, roads and drainage systems — under an international contracting framework at one of East Africa's key trade gateways.",
+      "Construction of container terminal infrastructure, including container yards, roads, drainage systems and port support facilities under an international EPC contract.",
     responsibilities: [
       "Managed container yard, roads and drainage construction.",
       "Coordinated building and infrastructure works on Phase II.",
@@ -153,19 +158,23 @@ export const PROJECTS = [
       "Strengthened safety culture across the site.",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1598194501777-edbff942e501?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
-      "https://images.unsplash.com/photo-1778774796420-e3a18e718bf1?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
-      "https://images.pexels.com/photos/24702866/pexels-photo-24702866.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/images/projects/MPDP-1.jpg",
+      "/images/projects/MPDP-2.jpeg",
+      "/images/projects/MPDP-3.jpg",
+      "/images/projects/MPDP-4.jpg",
+      "/images/projects/MPDP-5.jpeg",
+      "/images/projects/MPDP-6.jpeg",
     ],
   },
   {
     id: "kyambura-hydropower-uganda",
-    title: "Kyambura Hydropower Project",
+    title: "Kyambura Small Hydropower Project",
+    subtitle: "Site Engineer • 7.6 MW Hydropower Plant • (2018–2019)",
     location: "Uganda",
     year: "2018 — 2019",
-    category: "Hydropower (7.6 MW) / Renewable Energy",
+    category: "Hydropower",
     image:
-      "https://images.unsplash.com/photo-1560279966-2d681f3d4dfc?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400",
+      "/images/projects/KYB-1.jpg",
     overview:
       "Site Engineer supervising civil works for a 7.6 MW small hydropower scheme, including channels, forebay tank, spillway and powerhouse structures.",
     responsibilities: [
@@ -184,19 +193,23 @@ export const PROJECTS = [
       "Built local workforce capability through training.",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1655683975875-28f03121ac89?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
-      "https://images.unsplash.com/photo-1585374092362-bd6b0e6311f7?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
-      "https://images.pexels.com/photos/12336201/pexels-photo-12336201.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/images/projects/KYB-1.jpg",
+      "/images/projects/KYB-2.JPG",
+      "/images/projects/KYB-3.JPG",
+      "/images/projects/KYB-4.JPG",
+      "/images/projects/KYB-5.JPG",
+      "/images/projects/KYB-6.JPG",
     ],
   },
   {
     id: "muvumbe-hydropower-uganda",
     title: "Muvumbe Hydropower Project",
+    subtitle: "Site Engineer • 6.5 MW Hydropower Plant • (2015–2017)",
     location: "Uganda",
     year: "2015 — 2017",
-    category: "Hydropower (6.5 MW) / Renewable Energy",
+    category: "Hydropower",
     image:
-      "https://images.pexels.com/photos/29000309/pexels-photo-29000309.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "/images/projects/MUV-1.jpg",
     overview:
       "Site Engineer supervising civil works for a 6.5 MW small hydropower scheme, including channels, forebay tank, spillway and powerhouse structures, in challenging terrain.",
     responsibilities: [
@@ -215,19 +228,23 @@ export const PROJECTS = [
       "Delivered within demanding terrain constraints.",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1560279966-2d681f3d4dfc?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
-      "https://images.pexels.com/photos/12336201/pexels-photo-12336201.jpeg?auto=compress&cs=tinysrgb&w=900",
-      "https://images.unsplash.com/photo-1585374092362-bd6b0e6311f7?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+      "/images/projects/MUV-1.jpg",
+      "/images/projects/MUV-2.JPG",
+      "/images/projects/MUV-4.JPG",
+      "/images/projects/MUV-5.JPG",
+      "/images/projects/MUV-6.JPG",
+      "/images/projects/MUV-7.JPG",
     ],
   },
   {
     id: "thilawa-port-myanmar",
     title: "Thilawa Port Expansion Project",
+    subtitle: "Site Engineer • (2017–2018)",
     location: "Myanmar",
     year: "2017 — 2018",
-    category: "Marine Infrastructure / Port",
+    category: "PORT INFRASTRUCTURE",
     image:
-      "https://images.pexels.com/photos/36652843/pexels-photo-36652843.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "/images/projects/TPP-1.JPG",
     overview:
       "Site Engineer supervising container yard, jetty and drainage construction works for a major port expansion increasing national trade capacity.",
     responsibilities: [
@@ -246,9 +263,12 @@ export const PROJECTS = [
       "Delivered critical milestones on the expansion programme.",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1598193957011-39b9f2916992?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
-      "https://images.unsplash.com/photo-1778774796420-e3a18e718bf1?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
-      "https://images.unsplash.com/photo-1598194501777-edbff942e501?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+      "/images/projects/TPP-1.JPG",
+      "/images/projects/TPP-2.jpg",
+      "/images/projects/TPP-3.jpg",
+      "/images/projects/TPP-4.jpg",
+      "/images/projects/TPP-5.jpg",
+      "/images/projects/TPP-6.jpg",
     ],
   },
 ];

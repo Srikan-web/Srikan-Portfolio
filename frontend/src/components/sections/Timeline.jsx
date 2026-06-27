@@ -12,7 +12,7 @@ const CompanyLogo = ({ company, align }) => {
       className={`mb-3 flex ${align === "right" ? "lg:justify-end" : "lg:justify-start"} justify-start`}
       title={c.name}
     >
-      <div className={`h-12 w-12 rounded-md border border-border ${c.bg} grid place-items-center overflow-hidden shrink-0 shadow-sm`}>
+      <div className={`h-20 w-20 rounded-md border border-border ${c.bg} grid place-items-center overflow-hidden shrink-0 shadow-sm`}>
         {!error ? (
           <img
             src={c.logo}
@@ -34,8 +34,8 @@ const CompanyLogo = ({ company, align }) => {
 export const Timeline = () => {
   return (
     <section className="surface border-y border-border">
-      <div className="container-px py-20 lg:py-32">
-        <SectionHeading overline="Career Journey" title="An animated timeline of delivery" />
+      <div className="container-px py-16 lg:py-20">
+        <SectionHeading overline="Career Journey" title="Professional Timeline" />
 
         <div className="relative">
           <div className="absolute left-3 lg:left-1/2 top-0 bottom-0 w-px bg-border lg:-translate-x-1/2" />

@@ -11,8 +11,8 @@ export const Projects = () => {
     <section id="projects" className="container-px py-20 lg:py-32">
       <SectionHeading
         overline="Featured Projects"
-        title="Infrastructure delivered worldwide"
-        subtitle="A selection of major construction and infrastructure projects across the Maldives, Kenya, Uganda and Myanmar."
+        title="Major Infrastructure & Resort Projects"
+        subtitle="A selection of major infrastructure, marine, hydropower and luxury resort projects delivered across the Maldives, Kenya, Uganda and Myanmar."
       />
 
       <div className="grid gap-6 md:grid-cols-6 auto-rows-fr">
@@ -45,6 +45,11 @@ export const Projects = () => {
                   <h3 className="font-heading text-xl lg:text-2xl font-bold text-white leading-tight pr-8">
                     {p.title}
                   </h3>
+                  {p.subtitle && (
+  <div className="mt-2 text-sm text-white/90 font-medium">
+    {p.subtitle}
+  </div>
+)}
                 </div>
                 <div className="absolute top-4 right-4 h-9 w-9 grid place-items-center rounded-full bg-white/15 backdrop-blur-sm text-white opacity-0 group-hover:opacity-100 group-hover:rotate-0 -rotate-45 transition-all duration-300">
                   <ArrowUpRight className="h-4 w-4" />

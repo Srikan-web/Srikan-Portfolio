@@ -7,12 +7,12 @@ export const About = () => {
     <section id="about" className="container-px py-20 lg:py-32">
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <Reveal>
-          <div className="relative">
+          <div className="relative -mt-8">
             <div className="absolute -inset-3 grid-bg opacity-40 -z-10" />
             <img
               src={PROFILE.aboutImage}
               alt="Srikan on a construction site"
-              className="w-full aspect-[4/5] object-cover rounded-md border border-border"
+              className="w-4/5 mx-auto aspect-[4/5] object-cover rounded-md border border-border"
             />
             <div className="absolute -bottom-6 -right-2 sm:right-6 bg-primary text-primary-foreground p-5 rounded-md shadow-xl">
               <div className="text-4xl font-heading font-extrabold leading-none">10+</div>
