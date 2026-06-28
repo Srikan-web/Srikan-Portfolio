@@ -287,8 +287,7 @@ export const RESEARCH = {
   title:
     "Construction Challenges of Seismic-Resilient Timber Structural Systems: A Comparative Study of Press-Lam and RSFJ Technologies",
   level: "Master's Research — Auckland University of Technology",
-  image:
-    "https://customer-assets.emergentagent.com/job_srikan-projects/artifacts/gxnt1kqw_912c895d-f4e6-4dc2-8f37-024dabf539c3.png",
+  image: "/images/projects/RSFJ vs Press Lam.png",
   abstract:
     "The aim of this research is to critically evaluate and compare the construction management performance of timber structural systems utilising Resilient Slip Friction Joint (RSFJ) and Press-Lam technology in New Zealand, with a focus on on-site erection efficiency, procurement and logistics, and construction scheduling, in order to identify the most effective system under varying project conditions.",
   themes: [
@@ -328,12 +327,108 @@ export const SKILLS = [
 ];
 
 export const GALLERY = [
-  "https://images.unsplash.com/photo-1645645082782-afc5a007f3e1?crop=entropy&cs=srgb&fm=jpg&q=85&w=800",
-  "https://images.unsplash.com/photo-1598193957011-39b9f2916992?crop=entropy&cs=srgb&fm=jpg&q=85&w=800",
-  "https://images.unsplash.com/photo-1560279966-2d681f3d4dfc?crop=entropy&cs=srgb&fm=jpg&q=85&w=800",
-  "https://images.pexels.com/photos/29000309/pexels-photo-29000309.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.pexels.com/photos/36652843/pexels-photo-36652843.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.unsplash.com/photo-1504307651254-35680f356dfd?crop=entropy&cs=srgb&fm=jpg&q=85&w=800",
-  "https://images.unsplash.com/photo-1568056916012-b06d738446de?crop=entropy&cs=srgb&fm=jpg&q=85&w=800",
-  "https://images.unsplash.com/photo-1778774796420-e3a18e718bf1?crop=entropy&cs=srgb&fm=jpg&q=85&w=800",
+  {
+    image: "/images/projects/GK-1.png",
+    caption: "Mombasa Port Development Project - Kenya"
+  },
+  {
+    image: "/images/projects/GK-2.jpg",
+    caption: "Mombasa Port Development Project - Kenya"
+  },
+  {
+    image: "/images/projects/GK-3.jpg",
+    caption: "Mombasa Port Development Project - Kenya"
+  },
+  {
+    image: "/images/projects/GK-4.jpg",
+    caption: "Mombasa Port Development Project - Kenya"
+  },
+  {
+    image: "/images/projects/GK-5.png",
+    caption: "Mombasa Port Development Project - Kenya"
+  },
+  {
+    image: "/images/projects/GK-6.jpg",
+    caption: "Mombasa Port Development Project - Kenya"
+  },
+
+  {
+  image: "/images/projects/GM-1.jpg",
+  caption: "Thilawa Port Expansion Project - Myanmar"
+},
+{
+  image: "/images/projects/GM-2.jpg",
+  caption: "Thilawa Port Expansion Project - Myanmar"
+},
+{
+  image: "/images/projects/GM-3.jpg",
+  caption: "Thilawa Port Expansion Project - Myanmar"
+},
+
+{
+  image: "/images/projects/GMP-1.jpeg",
+  caption: "One&Only Reethi Rah Resort Project - Maldives"
+},
+{
+  image: "/images/projects/GMP-2.jpeg",
+  caption: "One&Only Reethi Rah Resort Project - Maldives"
+},
+{
+  image: "/images/projects/GMP-3.jpeg",
+  caption: "One&Only Reethi Rah Resort Project - Maldives"
+},
+{
+  image: "/images/projects/GMP-4.jpeg",
+  caption: "One&Only Reethi Rah Resort Project - Maldives"
+},
+{
+  image: "/images/projects/GMP-6.jpeg",
+  caption: "One&Only Reethi Rah Resort Project - Maldives"
+},
+{
+  image: "/images/projects/GMP-7.jpeg",
+  caption: "One&Only Reethi Rah Resort Project - Maldives"
+},
+{
+  image: "/images/projects/GMP-8.jpeg",
+  caption: "One&Only Reethi Rah Resort Project - Maldives"
+},
+
+{
+  image: "/images/projects/GUK-1.jpg",
+  caption: "Kiyambura Hydropower Project - Uganda"
+},
+{
+  image: "/images/projects/GUK-2.jpg",
+  caption: "Kiyambura Hydropower Project - Uganda"
+},
+{
+  image: "/images/projects/GUK-3.jpg",
+  caption: "Kiyambura Hydropower Project - Uganda"
+},
+{
+  image: "/images/projects/GUK-4.jpg",
+  caption: "Kiyambura Hydropower Project - Uganda"
+},
+{
+  image: "/images/projects/GUK-5.jpg",
+  caption: "Kiyambura Hydropower Project - Uganda"
+},
+
+{
+  image: "/images/projects/GUM-1.jpg",
+  caption: "Muvumbe Hydropower Project - Uganda"
+},
+{
+  image: "/images/projects/GUM-2.JPG",
+  caption: "Muvumbe Hydropower Project - Uganda"
+},
+{
+  image: "/images/projects/GUM-3.JPG",
+  caption: "Muvumbe Hydropower Project - Uganda"
+},
+{
+  image: "/images/projects/GUM-4.JPG",
+  caption: "Muvumbe Hydropower Project - Uganda"
+},
 ];
