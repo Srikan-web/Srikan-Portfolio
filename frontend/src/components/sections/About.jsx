@@ -52,10 +52,10 @@ export const About = () => {
             ))}
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-2">
+          <div className="mt-8 flex flex-wrap gap-3 justify-center lg:justify-start">
             {ABOUT.credentials.map((c, i) => (
               <Reveal key={i} delay={0.1 + i * 0.05}>
-                <span className="text-xs font-medium px-3 py-1.5 rounded-full border border-border bg-surface">
+                <span className="text-xs sm:text-sm font-medium px-3 py-1.5 rounded-full border border-border bg-surface whitespace-nowrap">
                   {c}
                 </span>
               </Reveal>
